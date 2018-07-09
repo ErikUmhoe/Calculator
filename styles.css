@@ -1,0 +1,35 @@
+#calculator-back {
+  height: 500px;
+  width: 400px;
+  background-color:   #800000;
+  
+}
+#space {
+  height: 10px;
+}
+#calculator-screen {
+  height: 150px;
+  width: 300px;
+  margin-left: 50px;
+  background-color:  #8c8c8c;
+}
+#text {
+  font-size: 40px;
+  text-align: center;
+}
+#clear {
+  font-size: 20px;
+}
+button {
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 30px;
+}
+.func {
+  background-color: gray;
+}
