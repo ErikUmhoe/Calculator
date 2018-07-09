@@ -1,5 +1,5 @@
 #calculator-back {
-  height: 500px;
+  height: 550px;
   width: 400px;
   background-color:   #800000;
   
@@ -19,6 +19,10 @@
 }
 #clear {
   font-size: 20px;
+}
+#back {
+  width: 100px;
+  height: 40px;
 }
 button {
   width: 60px;

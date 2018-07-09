@@ -38,7 +38,7 @@ var buttons = document.getElementsByTagName('button');
 for(var i = 0; i < buttons.length; i++)
 {
     var text = buttons[i].innerHTML.toString();
-    if(!text.includes("=") && !text.includes("Clear"))
+    if(!text.includes("=") && !text.includes("Clear") && !text.includes("Back"))
     {
       buttons[i].onclick = function() {
       document.getElementById('text').innerHTML += 					this.innerHTML.trim();
@@ -50,13 +50,6 @@ for(var i = 0; i < buttons.length; i++)
         var arr = [];
       while(textCont.length > 0)
       {
-       /*  var num1 = parseInt(textCont);
-        textCont = textCont.substring(textCont.indexOf(num1) + String(num1).length);
-        var func = textCont.substring(0,1);
-        textCont = textCont.substring(1);
-        var num2 = parseInt(textCont);
-                  
-        document.getElementById("text").innerHTML = operate(func, num1, num2); */
        var a = parseInt(textCont);
        textCont = textCont.substring(String(a).length);
        var b = textCont.substring(0,1);
@@ -77,6 +70,13 @@ for(var i = 0; i < buttons.length; i++)
       }
       document.getElementById("text").innerHTML = arr[0];
       
+    }
+  }
+  else if(text.includes("Back"))
+  {
+  	buttons[i].onclick = function() {
+    var x = String(document.getElementById("text").innerHTML);
+  document.getElementById("text").innerHTML = x.substring(0,x.length - 1);
     }
   }
   else {
